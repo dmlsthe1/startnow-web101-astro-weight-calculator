@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astro Weight Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  
+  <div class="background">
+
+    <div class="container">
+      <h1 class="display-1 pt-4 mt-4 text-white text-center">AstroCalculator</h1>
+      <form>
+        <div class="row">
+          <div class="form-group col-md-3">
+            <label for="user-weight" class="form-control-label text-white">Your Weight</label>
+            <input id="user-weight" type="text" placeholder="Weight (lbs)" class="form-control border border-white">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="planets" class="form-control-label text-white">Select a Planet</label>
+            <select id="planets" class="form-control border border-white">
+            </select>
+          </div>
+          <div class="form-group col-md-3 align-self-end">
+            <button class="btn btn-primary form-control" id="calculate-button">Calculate</button>
+          </div>
+          <div class="form-group col-md-3 align-self-end">
+            <label class="border border-white rounded form-control lead text-white bg-dark text-md-center">
+              <b>Pluto?</b>
+              <input id="check-pluto" type="checkbox" checked="true" class="ml-3">
+              <br>
+              <small>Am I right?</small>
+            </label>
+          </div>
+        </div>
+      </form>
+      <p id="output" class="mt-2 lead text-white bg-primary text-center"></p>
+    </div>
+    <script src="main.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>
+
+  </div>
+
+</body>
+
+</html>
